@@ -162,6 +162,10 @@ idList ="D:\\dokumente\\AudioGUIDLookup.txt"
 ignoreList = ["Level:0","Level:1"]  # this things show up after switching to another default-output and back.
 # I do not know what they are, they seem unrelated to volume level.
 
+# If we do not have a name list, make one.
+if not os.path.exists(idList):
+    updateNameList(idList,regA)
+
 # We make a new registry export, we wanna see those changes
 makeNewRegistryExport(regKey,regB)
 # Making white space between the export and outputs
