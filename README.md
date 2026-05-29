@@ -1,5 +1,6 @@
 # WindowsAudioChangeChecker
 just a cute script to compare an old registry export to a new one to see if anything changed. mostly because changed settings after updates annoyed me.
+Made with Python 3.12.2, but most other versions should be compatible i think
 
 Usage so far:  
 Step 1 is to get an export of the relevant registry section. Windows gives us a command for that. The target folder is freely changeable (altough i reccomend not using the user folder as that caused access issues on my machine)
